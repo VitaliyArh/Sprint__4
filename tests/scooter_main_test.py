@@ -2,8 +2,8 @@ import allure
 from pages.scooter_main_page import ScooterMainPage
 from locators.scooter_main_locator import LocatorScooterMain, Data
 
-class Test:
-    @allure.description('Вопрос - Сколько это стоит')
+class TestQuestionsMain:
+    @allure.title('Вопрос - Сколько это стоит')
     def test_check_element_how_much_is_it(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -12,7 +12,7 @@ class Test:
         expected_text = Data.Answer_To_Question_0
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Хочу сразу несколько самокатов')
+    @allure.title('Вопрос - Хочу сразу несколько самокатов')
     def test_i_want_several_scooters(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -21,7 +21,7 @@ class Test:
         expected_text = Data.Answer_To_Question_1
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Как расчитывается время аренды?')
+    @allure.title('Вопрос - Как расчитывается время аренды?')
     def test_how_is_rental_time_calculated(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -30,7 +30,7 @@ class Test:
         expected_text = Data.Answer_To_Question_2
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Можно ли заказать самокат прямо на сегодня?')
+    @allure.title('Вопрос - Можно ли заказать самокат прямо на сегодня?')
     def test_order_a_scooter_today(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -39,7 +39,7 @@ class Test:
         expected_text = Data.Answer_To_Question_3
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Можно ли продлить заказ или вернуть самокат раньше?')
+    @allure.title('Вопрос - Можно ли продлить заказ или вернуть самокат раньше?')
     def test_scooter_to_renew_or_return(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -48,7 +48,7 @@ class Test:
         expected_text = Data.Answer_To_Question_4
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Вы привозите зарядку вместе с самокатом?')
+    @allure.title('Вопрос - Вы привозите зарядку вместе с самокатом?')
     def test_do_you_bring_charger(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -57,7 +57,7 @@ class Test:
         expected_text = Data.Answer_To_Question_5
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Можно ли отменить заказ?')
+    @allure.title('Вопрос - Можно ли отменить заказ?')
     def test_can_i_cancel_an_order(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()
@@ -66,7 +66,7 @@ class Test:
         expected_text = Data.Answer_To_Question_6
         assert actual_text == expected_text
 
-    @allure.description('Вопрос - Я жизу за МКАДом, привезёте?')
+    @allure.title('Вопрос - Я жизу за МКАДом, привезёте?')
     def test_i_live_outside_bring(self, driver):
         scooter_main = ScooterMainPage(driver)
         scooter_main.goto_important_questions()

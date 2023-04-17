@@ -30,4 +30,3 @@ class ModalWindow:
 class Logo:
     LOGO_SCOOTER = (By.XPATH, ".//*[@alt='Scooter']")                           # логотип Самокат
     LOGO_YANDEX = (By.XPATH, ".//img[@alt='Yandex']")                           # логотип Яндекс
-
